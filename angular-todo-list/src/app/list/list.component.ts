@@ -24,4 +24,8 @@ export class ListComponent implements OnInit {
       this.taskList.splice(index, 1);
     }
   }
+
+  removeAllTasks(){
+    this.taskList.splice(0, this.taskList.length)
+  }
 }
